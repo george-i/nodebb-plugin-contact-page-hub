@@ -1,21 +1,21 @@
 {
-    "name": "nodebb-plugin-contact-page",
+    "name": "nodebb-plugin-contact-page-hub",
     "version": "1.1.0",
-    "description": "A nodeBB plugin to a contact page",
+    "description": "A nodeBB plugin to a contact page forked from robin4002",
     "main": "library.js",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/MinecraftForgeFrance/nodebb-plugin-contact-page.git"
+        "url": "git+https://github.com/george-i/nodebb-plugin-contact-page-hub.git"
     },
     "keywords": [
         "contact"
     ],
-    "author": "robin4002",
+    "author": "George I",
     "license": "BSD-2-Clause",
     "bugs": {
-        "url": "https://github.com/MinecraftForgeFrance/nodebb-plugin-contact-page/issues"
+        "url": "https://github.com/george-i/nodebb-plugin-contact-page-hub/issues"
     },
-    "homepage": "https://github.com/MinecraftForgeFrance/nodebb-plugin-contact-page#readme",
+    "homepage": "https://github.com/george-i/nodebb-plugin-contact-page-hub#readme",
     "dependencies": {
         "simple-recaptcha-new": "^1.1.1"
     },

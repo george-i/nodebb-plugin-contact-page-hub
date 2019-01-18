@@ -1,0 +1,17 @@
+{
+    "contact": "Contact",
+    "form.email": "Email",
+    "form.name": "Nume",
+    "form.subject": "Subiect",
+    "form.message": "Mesaj",
+    "form.captcha": "Captcha",
+    "btn.send": "Trimite",
+    "contact-error": "Failed to contact",
+    "invalid.email": "Email invalid",
+    "error.mail": "Serverul nu a putut trimite mesajul. Incearca mai tarziu",
+    "error.incomplete": "Completeaza toate campurile",
+    "error.incomplete.recaptcha": "Completeaza captcha!",
+    "error.invalid.recaptcha": "Captcha este invalid!",
+    "send.success": "Mesajul tau a fost trimis",
+    "email.header": "%1 a trimis urmatorul mesaj:"
+}
