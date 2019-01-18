@@ -1,7 +1,7 @@
 {
-    "id": "nodebb-plugin-contact-page",
-    "name": "NodeBB Plugin Contact page",
-    "url": "https://github.com/MinecraftForgeFrance/nodebb-plugin-contact-page",
+    "id": "nodebb-plugin-contact-page-hub",
+    "name": "NodeBB Plugin Contact page Hub",
+    "url": "https://github.com/george-i/nodebb-plugin-contact-page-hub",
     "library": "./library.js",
     "templates": "./static/templates",
     "scripts": [
@@ -20,5 +20,5 @@
         { "hook": "filter:email.modify", "method": "modifyEmail"}
     ],
     "languages": "languages",
-    "defaultLang": "en_GB"
+    "defaultLang": "ro"
 }

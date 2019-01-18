@@ -23,6 +23,8 @@
 				</tr>
 				<tr>
 					<td style="padding: 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+						<p>Sender email: {{replyTo}}</p>
+						<p>Request for invite: {{inviterequest}}</p>
 						<p style="margin: 0; font-style: italic;">{footer_text}</p>
 					</td>
 				</tr>

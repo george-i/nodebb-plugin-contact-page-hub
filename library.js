@@ -47,7 +47,7 @@ const ContactPage = {
     addToAdminNav(header, callback) {
         header.plugins.push({
             route: '/plugins/contact-page',
-            name: 'Contact page',
+            name: 'Contact Page Hub',
         });
 
         callback(null, header);
@@ -55,7 +55,7 @@ const ContactPage = {
     modifyEmail(mailData, callback) {
         if(mailData && mailData.template == "contact-page") {
             mailData = modifyFrom(mailData);
-        }  
+        }
         callback(null, mailData);
     }
 };
@@ -79,15 +79,15 @@ function postContact(req, res) {
             if (err) {
                 return res.status(400).json({success: false, msg: '[[contactpage:error.invalid.recaptcha]]'});
             } else {
-                sendMail(req.body.email, req.body.name, req.body.subject, req.body.message, res);
+                sendMail(req.body.inviterequest, req.body.email, req.body.name, req.body.subject, req.body.message, res);
             }
         });
     } else {
-        sendMail(req.body.email, req.body.name, req.body.subject, req.body.message, res);
+        sendMail(req.body.inviterequest, req.body.email, req.body.name, req.body.subject, req.body.message, res);
     }
 }
 
-function sendMail(replyTo, name, subject, message, res) {
+function sendMail(inviterequest, replyTo, name, subject, message, res) {
     let mailParams = {
         content_text: message.replace(/(?:\r\n|\r|\n)/g, '<br>'),
         footer_text: ContactPage.messageFooter,
@@ -95,7 +95,8 @@ function sendMail(replyTo, name, subject, message, res) {
         subject: subject,
         template: 'contact-page',
         uid: 0,
-        replyTo,
+        replyTo: replyTo,
+		inviterequest: inviterequest
     }
 
     mailParams = Object.assign({}, emailer._defaultPayload, mailParams);

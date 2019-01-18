@@ -2,10 +2,10 @@
 
 define('admin/plugins/contact-page', ['settings'], function(Settings) {
 	var ContactPage = {};
-	
+
 	ContactPage.init = function() {
 		Settings.load('contactpage', $('.contact-page-settings'));
-	
+
 		$('#save').on('click', function() {
             Settings.save('contactpage', $('.contact-page-settings'), function() {
                 app.alert({
@@ -20,6 +20,6 @@ define('admin/plugins/contact-page', ['settings'], function(Settings) {
             });
         });
 	};
-	
+
 	return ContactPage;
 });

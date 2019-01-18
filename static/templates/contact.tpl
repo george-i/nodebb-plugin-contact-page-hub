@@ -1,16 +1,16 @@
 <ol class="breadcrumb">
-	<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<a href="/" itemprop="url">
+    <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
 			<span itemprop="title">
 				[[global:home]]
 			</span>
-		</a>
-	</li>
-	<li component="breadcrumb/current" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb" class="active">
+        </a>
+    </li>
+    <li component="breadcrumb/current" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb" class="active">
         <span itemprop="title">
             [[contactpage:contact]]
         </span>
-	</li>
+    </li>
 </ol>
 
 <div class="alert alert-danger hidden" id="contact-notify">
@@ -45,6 +45,12 @@
         <label class="control-label col-sm-2" for="message">[[contactpage:form.message]]</label>
         <div class="col-sm-10">
             <textarea class="form-control vresize" rows="8" id="message" name="message"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="name">[[contactpage:form.inviterequest]]</label>
+        <div class="col-sm-10">
+            <input type="checkbox" class="form-check" id="inviterequest" name="inviterequest">
         </div>
     </div>
     <input type="hidden" name="_csrf" value="{config.csrf_token}" />

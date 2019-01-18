@@ -13,5 +13,6 @@
     "error.incomplete.recaptcha": "Completeaza captcha!",
     "error.invalid.recaptcha": "Captcha este invalid!",
     "send.success": "Mesajul tau a fost trimis",
-    "email.header": "%1 a trimis urmatorul mesaj:"
+    "email.header": "%1 a trimis urmatorul mesaj:",
+    "form.inviterequest": "Doresc invitatie"
 }
